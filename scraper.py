@@ -10,7 +10,7 @@ def scrape_table(parameter_a):
     for row in rows:
         # Set up our data record - we'll need it later
         record = {}
-        table_cells = row.cssselect("h3.search-result__title heading--main")
+        table_cells = row.cssselect("h3.search-result__title.heading--main")
         table_cells2 = row.cssselect("ul.search-result__provider-info li")
         if table_cells: 
             record['School name'] = table_cells[0].text_content()
