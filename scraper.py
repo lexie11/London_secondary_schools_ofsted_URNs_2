@@ -41,4 +41,4 @@ def scrape(parameter_b):
 # ---------------------------------------------------------------------------
 
 starting_url = 'https://reports.ofsted.gov.uk/search?q=&location=&radius=&level_2_types%5B0%5D=2&region%5B0%5D=E12000007&status%5B0%5D=1&level_1_types=1&rows=887'
-scrape_and_look_for_next_link(starting_url)
+scrape(starting_url)
